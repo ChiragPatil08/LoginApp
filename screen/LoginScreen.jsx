@@ -18,12 +18,12 @@ const LoginScreen = () => {
     } else {
       setErrorMessage('');
       setPasswordSet(true);
-      // Add your password reset logic here if needed
+  
     }
   };
 
   const handleLogin = () => {
-    navigation.navigate("Home"); // Navigate back to Home screen
+    navigation.navigate("Home"); 
   };
 
   return (
@@ -41,7 +41,7 @@ const LoginScreen = () => {
       {passwordSet ? (
         <View style={styles.successContainer}>
           <Image 
-            source={require("../screen/assets/circle.png")} // Replace with the path to your success icon
+            source={require("../screen/assets/circle.png")} 
             style={styles.successIcon} 
           />
           <Text style={styles.successText}>Password reset successfully!</Text>
